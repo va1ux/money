@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Money </title>
+</head>
+<body>
+
+<script>
+document.addEventListener("click", () => {
+  const a = document.createElement("a");
+  a.href = "test.txt";
+  a.download = "test.txt";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}, { once: true });
+</script>
+
+<h1>Testing</h1>
+
+</body>
+</html>
